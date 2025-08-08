@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form >
+    <h1>ข้อมูลส่วนตัวของผู้สมัคร</h1> <br><br>
+    คำนำหน้าชื่อ: <label for="mr">เลือกหนึ่งรายการ:</label>
+<select id="mr" name="mr">
+  <option value="">-- เลือกหนึ่งรายการ --</option> <!-- placeholder -->
+  <option value="mr">นาย</option>
+  <option value="miss">นาง</option>
+  <option value="mrs">นางสาว</option>
+</select><br><br>
+    ชื่อ : <input type="text" required><br><br>
+    นามสกุุล : <input type="text"><br><br>
+    เลขประจำตัวประชาชน (13 หลัก) : <input type="text" maxlength="13"><br><br>
+    วันเดือนปีเกิด: <input type="date"><br><br>
+    อายุ (ปี): <input type="number"><br><br>
+    เพศ : <input type="radio" id="man" name="sex" value="man">
+    <label for="man">ชาย</label>
+    <input type="radio" id="woman" name="sex" value="woman">
+    <label for="woman">หญิง</label>
+    <br><br>
+
+    สัญชาติ : <input type="text"><br><br>
+    เชื้อชาติ : <input type="text"><br><br>
+    ศาสนา : <input type="text"><br><br>
+    เบอร์โทรศัพท์ : <input type="tel"><br><br>
+    อีเมล: <input type="email"><br><br>
+    ที่อยู่ : <textarea name="address" id="home"></textarea>
+    <h1>ข้อมูลการสมัครเรี่ยน</h1><br><br>
+    วุฒิที่จบมา : <input type="radio" id="m6" name="qualification" value="m6" >
+    <label for="m6">ม.6</label>
+    <input type="radio" id="Vocational" name="qualification" value="Vocational" >
+    <label for="m6">ปวช</label>
+    <input type="radio" id="Vocational1" name="qualification" value="Vocational1" >
+    <label for="m6">ปวส</label>
+    <br><br>
+    ชื่อสถานศึกษาที่จบ : <input type="text"><br><br>
+    ปีที่จบ : <input type="number"><br><br>
+    GPA : <input type="number" step="0.01"><br><br>
+    สาขาที่สมัคร : <label for="IT">เลือกสาขขา:</label>
+<select id="IT" name="IT">
+  <option value="">-- เลือกสาขขา --</option> <!-- placeholder -->
+  <option value="IT">IT</option>
+  <option value="ITI">ITI</option>
+  <option value="INE">INE</option>
+  <option value="INET">INET</option>
+</select><br><br>
+    เหตุผลที่เลือกสาขา : <textarea name="it" id="it "></textarea> <br><br>
+    <h1>ประวัติการศึกษา</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>ระดับการศึกษา</th>
+            <th>สถานศึกษา</th>
+            <th>จังหวัด</th>
+            <th>ปีที่เข้า</th>
+            <th>ปีที่จบ</th>
+            <th>วุฒิที่ได้รับ</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ประถมศึกษา</td>
+            <td><input type="text" name="school_primary"></td>
+            <td><input type="text" name="province_primary"></td>
+            <td><input type="text" name="start_primary"></td>
+            <td><input type="text" name="end_primary"></td>
+            <td><input type="text" name="degree_primary"></td>
+            <td><input type="text" name="gpa_primary"></td>
+        </tr>
+        <tr>
+            <td>มัธยมต้น</td>
+            <td><input type="text" name="school_junior"></td>
+            <td><input type="text" name="province_junior"></td>
+            <td><input type="text" name="start_junior"></td>
+            <td><input type="text" name="end_junior"></td>
+            <td><input type="text" name="degree_junior"></td>
+            <td><input type="text" name="gpa_junior"></td>
+        </tr>
+        <tr>
+            <td>มัธยมปลาย/ปวช./ปวส.</td>
+            <td><input type="text" name="school_senior"></td>
+            <td><input type="text" name="province_senior"></td>
+            <td><input type="text" name="start_senior"></td>
+            <td><input type="text" name="end_senior"></td>
+            <td><input type="text" name="degree_senior"></td>
+            <td><input type="text" name="gpa_senior"></td>
+        </tr>
+    </tbody>
+</table>
+
+    แนบไฟล์สำเนาบัตรประชาชน : <input type="file"><br><br>
+    แนบไฟล์วุฒิการศึกษา (เช่น ปพ.1) : <input type="file"><br><br>
+    <input type="checkbox" id="accept" name="condition" value="accept">
+  <label for="accept"> ยอมรับเงื่อนไข</label><br><br>
+  <input type="submit" value="submit">
+  <input type="reset" value="reset">
+</form>
+</body>
+</html>
